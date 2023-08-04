@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <title>Meu Site com Bootstrap</title>
+    <style>
+      * {
+        scroll-snap-type: block mandatory;
+        scrollbar-width: 0;
+      }
+
+      *::-webkit-scrollbar {
+        display: none;
+      }
+
+      section,
+      header {
+        scroll-snap-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          >Guia de Bootstrap</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#inicio"
+                >O que é Bootstrap?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#utilizado"
+                >Onde é utilizado?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#como-usar"
+                >Como eu posso usar?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="bg-primary text-white text-center py-5 min-vh-100 d-flex justify-content-center align-items-center flex-column"
+    >
+      <h1 class="fw-medium py-5">Bem-vindo ao Guia De bootstrap</h1>
+      <p class="fs-5">
+        Um exemplo de site usando
+        <a
+          href="https://getbootstrap.com/"
+          class="link-light link-opacity-75 link-opacity-100-hover link-offset-1-hover link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover fw-light"
+          >Bootstrap 5.3</a
+        >
+      </p>
+    </header>
+
+    <section
+      id="inicio"
+      class="py-5 min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <h2 class="h2 fw-bolder">O que é Bootstrap?</h2>
+        <p class="text-muted">
+          O Bootstrap é um framework de código aberto para o desenvolvimento
+          rápido e fácil de sites responsivos. Ele fornece uma ampla variedade
+          de componentes pré-construídos, estilos CSS e uma grade flexível que
+          facilita a criação de layouts consistentes. O Bootstrap é altamente
+          personalizável, compatível com todos os principais navegadores e
+          possui uma documentação abrangente e uma comunidade ativa de
+          desenvolvedores. Ele é constantementre atualizado e está na versão
+          Bootstrap 5.3.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="utilizado"
+      class="py-5 min-vh-100 d-flex justify-content-center align-items-center bg-light"
+    >
+      <div class="container">
+        <h2 class="h2 fw-bolder">Onde é utilizado?</h2>
+        <p class="text-muted">
+          O Bootstrap é amplamente utilizado no desenvolvimento de sites
+          responsivos. Ele fornece componentes pré-construídos, estilos CSS e
+          uma grade flexível para criar layouts consistentes. Com o Bootstrap, é
+          possível criar interfaces atraentes e funcionais para uma variedade de
+          projetos, como sites de comércio eletrônico. Empresas renomadas, como
+          Spotify, Airbnb, Netflix, Udemy e Shopify, utilizam o Bootstrap em
+          seus projetos de desenvolvimento web. Além disso, empresas como
+          LinkedIn, Tesla, Slack, Coursera e Adobe também adotam essa estrutura
+          popular de front-end para criar sites modernos e responsivos. O
+          Bootstrap economiza tempo e esforço, oferece suporte a recursos
+          avançados e possui uma comunidade ativa de desenvolvedores. No geral,
+          o Bootstrap é uma ferramenta poderosa para criar sites responsivos e
+          atrativos para empresas de todos os tamanhos.
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="como-usar"
+      class="py-5 min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <h2 class="h2 fw-bolder">Como eu posso usar?</h2>
+        <p class="text-muted">
+          Para começar a usar o Bootstrap, primeiro você precisa incorporá-lo ao
+          seu projeto inserindo um link para o CDN (Content Delivery Network) do
+          Bootstrap em seu código HTML. Isso pode ser encontrado na seção
+          <a
+            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            rel="_blank"
+            class="link-body-emphasis link-underline-opacity-50 link-offset-2 link-underline-opacity-100-hover"
+            >Getting Started</a
+          >
+          do site oficial do Bootstrap. Depois disso, você tem acesso aos
+          componentes prontos para uso, ao sistema de grid responsivo e a uma
+          variedade de estilos CSS pré-definidos oferecidos pelo Bootstrap.
+          <span class="text-info-emphasis"
+            >Lembre-se, para utilizar o Bootstrap efetivamente, é necessário ter
+            uma base sólida em HTML, CSS e JavaScript.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        Copyright &copy; 2023
+        <a
+          class="link-light link-underline-opacity-50 link-underline-opacity-100-hover link-offset-1"
+          href="https://github.com/EuCaue/
+"
+          >Cauê Souza</a
+        >. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
